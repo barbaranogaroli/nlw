@@ -1,0 +1,15 @@
+{# criar uma página igual à point-created, porém com outro símbolo e redirecionando para create-point.html #}
+{# para simular o erro alterar no server.js as tableas do sql para insert int em vez de into #}
+<div id="modal" class="point">
+    <div class="contentError">
+        <img src="/icones/x.svg" alt="Não foi possível concluir o cadastro.">
+        <h1>Não foi possível concluir o cadastro. Tente novamente.</h1>
+    </div>
+</div>
+
+<script>
+    //função que irá rodar depois de certo tempo
+    setTimeout(() => {
+        window.location = "/create-point"
+    }, 2000)
+</script>
